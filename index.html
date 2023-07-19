@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/762238d584.js" crossorigin="anonymous"></script>
+    <title>Instragram Photo Feed</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <i class="fa-brands fa-instagram fa-xl me-2"></i>
+          <a class="navbar-brand" href="#">Instagram</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <form class="d-flex" role="search">
+
+              <button class="btn btn-outline-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a New Post</button>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesability</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                  <hr>                  
+                  <li><a class="dropdown-item" style="color:red" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+    </nav>
+      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content d-flex justify-content-center" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="row gx-1 gy-1 justify-content-center">
+                <div class="col-4">
+                    <img class="rounded-2 image"  src="https://s.ebiografia.com/img/ap/er/a_persistei_ncia_da_memoi_ria_c.jpg?auto_optimize=low&width=655" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/ot/ri/o_triunfo_do_surrealismo.jpg?auto_optimize=low" alt="responsive image">
+                </div>
+                <div class="col-4">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/ab/ap/abaporu.jpg?auto_optimize=low" alt="">
+                </div>
+            </div>
+            <div class="row gx-1 gy-1 justify-content-center">
+                <div class="col-4">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/og/ri/o_grito_c.jpg?auto_optimize=low" alt="">
+                </div>
+                <div class="col-4 my">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/al/ib/a_liberdade_guiando_o_povo_c.jpg?auto_optimize=low" alt="">
+                </div>
+                <div class="col-4 my">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/ar/on/a_ronda_noturna_c.jpg?auto_optimize=low" alt="">
+                </div>
+            </div>
+            <div class="row gx-1 gy-1 justify-content-center">
+                <div class="col-4 my-0 mx-0">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/mo/ci/moci_a_do_brinco_de_pei_rola_c.jpg?auto_optimize=low" alt="">
+                </div>
+                <div class="col-4 my-0 mx-0">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/mo/na/mona_lisa_c.jpg?auto_optimize=low&width=655" alt="">
+                </div>
+                <div class="col-4 my-0 mx-0">
+                    <img class="rounded-2 image" src="https://s.ebiografia.com/img/ur/ut/urutu_c.jpg?auto_optimize=low" alt="">
+                </div>
+            </div>
+      </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="card" style="width: 35rem;">
+                        <div class="cardHeader">
+                          <h4>A persistência da memória, de Salvador Dali (1904-1989) </h4> <span>3/17</span>
+                        </div>
+                        <img src="https://s.ebiografia.com/img/ap/er/a_persistei_ncia_da_memoi_ria_c.jpg?auto_optimize=low&width=655" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6>375 Likes</h6>
+                          <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 35rem;">
+                        <div class="cardHeader">
+                          <h4>O triunfo do surrealismo, de Max Ernst (1891-1976)</h4> <span>3/17</span>
+                        </div>
+                        <img src="https://s.ebiografia.com/img/ot/ri/o_triunfo_do_surrealismo.jpg?auto_optimize=low" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6>375 Likes</h6>
+                          <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 35rem;">
+                        <div class="cardHeader">
+                          <h4>Abaporu, de Tarsila do Amaral (1886-1973)</h4> <span>3/17</span>
+                        </div>
+                        <img src="https://s.ebiografia.com/img/ab/ap/abaporu.jpg?auto_optimize=low" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6>375 Likes</h6>
+                          <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 35rem;">
+                        <div class="cardHeader">
+                          <h4>O grito, de Edvard Munch (1863-1944)</h4> <span>3/17</span>
+                        </div>
+                        <img src="https://s.ebiografia.com/img/og/ri/o_grito_c.jpg?auto_optimize=low" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6>375 Likes</h6>
+                          <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 35rem;">
+                        <div class="cardHeader">
+                          <h4>A liberdade guiando o povo, de Eugène Delacroix (1798-1863)</h4> <span>3/17</span>
+                        </div>
+                        <img src="https://s.ebiografia.com/img/al/ib/a_liberdade_guiando_o_povo_c.jpg?auto_optimize=low" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6>375 Likes</h6>
+                          <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 35rem;">
+                      <div class="cardHeader">
+                        <h4>A ronda noturna, de Rembrandt (1606-1669)</h4> <span>3/17</span>
+                      </div>
+                      <img src="https://s.ebiografia.com/img/ar/on/a_ronda_noturna_c.jpg?auto_optimize=low" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h6>375 Likes</h6>
+                        <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                      </div>
+                      <div class="card" style="width: 35rem;">
+                        <div class="cardHeader">
+                          <h4>Moça com brinco de pérola, de Johannes Vermeer (1632-1675)</h4> <span>3/17</span>
+                        </div>
+                        <img src="https://s.ebiografia.com/img/mo/ci/moci_a_do_brinco_de_pei_rola_c.jpg?auto_optimize=low" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6>375 Likes</h6>
+                          <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                        </div>
+                        <div class="card" style="width: 35rem;">
+                          <div class="cardHeader">
+                            <h4>Mona Lisa, de Leonardo da Vinci (1452-1519)</h4> <span>3/17</span>
+                          </div>
+                          <img src="https://s.ebiografia.com/img/mo/na/mona_lisa_c.jpg?auto_optimize=low&width=655" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h6>375 Likes</h6>
+                            <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                          </div>
+                          <div class="card" style="width: 35rem;">
+                            <div class="cardHeader">
+                              <h4>Urutu, de Tarsila do Amaral (1886-1973)</h4> <span>3/17</span>
+                            </div>
+                            <img src="https://s.ebiografia.com/img/ur/ut/urutu_c.jpg?auto_optimize=low" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6>375 Likes</h6>
+                            <p class="card-text">This is an example of photo you can post on Instagram using "card's content" from bootstrap.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+       </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-auto-open>  
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Create a New Post
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><b>Caption:</b></p>
+                <input type="text" placeholder="Add the caption of your post here" style="width: 100%; height: 60px;">
+                <button class="rounded-1" style="margin-top: 20px; margin-right: 5px;"><i class="fa-solid fa-camera"></i></button>
+                <button class="rounded-1"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal"> Publish </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+</body>
+</html>
